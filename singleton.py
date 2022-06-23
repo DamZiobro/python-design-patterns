@@ -4,21 +4,17 @@
 class Singleton(object):
     _instance = None
 
-    def __init__(self):
-        raise RuntimeError('Call instance() instead')
-
-    @classmethod
-    def instance(cls):
+    def __new__(cls):
         if cls._instance is None:
-            print('Creating new instance')
-            cls._instance = cls.__new__(cls)
+            print('Creating the object')
+            cls._instance = super(Singleton, cls).__new__(cls)
             # Put any initialization here.
         return cls._instance
 
 
 if __name__ == "__main__":    
-    singleton1 = Singleton.instance()
-    singleton2 = Singleton.instance()
+    singleton1 = Singleton()
+    singleton2 = Singleton()
 
     print(f"singleton1: {singleton1}")
     print(f"singleton2: {singleton2}")
