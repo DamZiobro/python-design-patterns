@@ -16,3 +16,13 @@ Factory pattern
 =====
 
 * we want to be able to create objects throught a common interface rather than spreading the creation code throughout the system
+* separation of creation of object (Factory classes) and usage of object methods (concrete classes)
+
+Builder pattern
+=====
+
+* 3 main actors:
+    * Director - orders building full Product
+    * Builder - builds parts of the Product
+    * Product -  object build by Builder on orders of Director
+* separation of Product construction (Builder) from construction instructions (Director)
