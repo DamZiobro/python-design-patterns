@@ -1,0 +1,19 @@
+PHOTOS PIPELINE
+1. Getting geolocation data from photos 
+2. Display on map (Google Maps, OpenStreetMap)
+3. ProgressBar of timeline
+
+
+NEWS FETCHER
+
+1. Fetching news from News API => https://www.thenewsapi.com/
+2. Consider multiple input API (Adapter pattern)
+  * from API for 'production' mode
+  * from JSON file for 'testing' mode
+3. Consider multiple outputs: 
+   * JSON file for local tests
+   * DynamoDB for AWS
+   * PostgreSQL 
+4. Keep data in abstract models inside the ap the app.
+5. Separate CRUD level.
+6. Consider transform layer between Extract and Load

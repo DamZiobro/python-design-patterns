@@ -26,3 +26,15 @@ Builder pattern
     * Builder - builds parts of the Product
     * Product -  object build by Builder on orders of Director
 * separation of Product construction (Builder) from construction instructions (Director)
+
+Adapter pattern
+=====
+
+* it wraps one object (adaptee )into another (adapter) and exposes the function with required params
+* adaptes legacy code structure into new code structure / new interfaces
+* useful to create consistent interface to integrate multiple external systems and switch them easely when needed
+
+Decorator pattern
+=====
+
+* useful when you need to add something BEFORE and AFTER functions (ex. how much time function takes)
