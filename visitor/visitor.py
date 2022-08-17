@@ -93,5 +93,3 @@ if __name__ == "__main__":
 
     non_owner_visitor = NonOwnerVisitor([light, thermostat])
     non_owner_visitor.visit() 
-
-

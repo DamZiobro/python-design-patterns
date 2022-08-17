@@ -1,11 +1,14 @@
-PHOTOS PIPELINE
+Escape Room in the City
+1. Escape room in the City
+2. Include tourist attractions with the tips and map
+
+PHOTOS TIMELINE
 1. Getting geolocation data from photos 
 2. Display on map (Google Maps, OpenStreetMap)
 3. ProgressBar of timeline
 
 
 NEWS FETCHER
-
 1. Fetching news from News API => https://www.thenewsapi.com/
 2. Consider multiple input API (Adapter pattern)
   * from API for 'production' mode
